@@ -1,0 +1,38 @@
+.modal-container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-radius: 10px;
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.modal-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 350px;
+  margin-bottom: 20px;
+}
+.modal-button {
+  border: transparent;
+  color: #000000;
+  /* font-weight: bold; */
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.confirm {
+  background-color: red;
+}
+.cancel {
+  background-color: green;
+}

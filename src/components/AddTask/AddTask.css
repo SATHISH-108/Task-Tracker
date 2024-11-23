@@ -1,0 +1,36 @@
+.add-task-container {
+  background-color: rgb(247, 250, 252);
+  width: 550px;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.label-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 250px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.button {
+  height: 35px;
+  width: 70px;
+  border-radius: 5px;
+  border: transparent;
+}
+.add-button {
+  background-color: rgba(0, 0, 0, 0.865);
+  color: #ffffff;
+}
+.edit-button {
+  background-color: rgba(0, 0, 255, 0.877);
+  color: #ffffff;
+}
+.error-message {
+  color: red;
+  font-size: 18px;
+  font-family: 700;
+}

@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { AddTask, TaskList, Modal } from "./components/index";
+import { useGlobalContext } from "./components/Context/TaskContext";
 
-function App() {
+const App = () => {
+  const { modal } = useGlobalContext();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <center>
+      {modal.isOpen && <Modal />}
+      <AddTask />
+      <TaskList />
+    </center>
   );
-}
+};
 
 export default App;
